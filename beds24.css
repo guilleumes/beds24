@@ -1,0 +1,47 @@
+ .pagetypecalendar2 .overflow-unit{ background-color: #FEE0DD; color: #9E4843;}
+
+
+div < .my-class-special{
+
+background-color:orange;
+}
+
+div:has(> a.my-class-purple) {
+
+    background-color:cyan;
+    border-left: 12px solid orange;
+    border-right: 12px solid red;
+ 
+}
+div:has(> a.booking-double-bed) {
+
+ color : red;	
+}
+//.pagetypebookingsgrid table {pointer-events: none;}
+ .bookgrid_rowroomname{display:none}
+
+
+/*
+
+my-class-purple booking-paid booking-cuna booking-double-bed
+*/
+
+
+
+.mytextwithicon {
+    position:relative;
+}    
+.mytextwithicon:before {
+    content: "\f236";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: FontAwesome;
+    left:-5px;
+    position:absolute;
+    top:0;
+ }
+
+@import url("https://unpkg.com/lucide-static@0.462.0/font/lucide.css");
+
+  @font-face {
+    font-family: 'LucideIcons';
+    src: url(https://unpkg.com/lucide-static@latest/font/Lucide.ttf) format('truetype');
+  }
